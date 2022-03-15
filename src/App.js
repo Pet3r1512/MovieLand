@@ -3,7 +3,7 @@ import "./App.css";
 import Card from "./Card";
 
 function App() {
-  const API_URL = "http://www.omdbapi.com/?apikey=cd6623af";
+  const API_URL = "https://www.omdbapi.com/?apikey=cd6623af";
   const searchMovie = async (title) => {
     const response = await fetch(`${API_URL}&s=${title}`);
     const data = await response.json();
