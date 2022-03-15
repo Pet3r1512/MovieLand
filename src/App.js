@@ -14,7 +14,7 @@ function App() {
   const [search, setSearch] = useState("");
   useEffect(() => {
     searchMovie({ search });
-  }, []);
+  }, [search]);
   return (
     <div className="App box-border pt-[30px] sm:pt-[40px] lg:pt-[50px] mx-auto flex flex-col gap-y-[20px] items-center min-h-screen font-Poppins text-white bg-gradient-to-r from-violet-500 to-fuchsia-500">
       <h1 className="font-extrabold text-5xl cursor-pointer">MovieLand</h1>
